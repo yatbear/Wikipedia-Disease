@@ -4,6 +4,8 @@
 # Usage: python [files]
 #
 # Classify Wikipedia Disease Articles
+#       Multinomial Naive Bayes
+#       Logistic Regression     
 #
 # Author: yatbear <sapphirejyt@gmail.com>
 #         2016-02-11
@@ -26,6 +28,7 @@ class Wiki_Disease_Analyser(object):
         self.tokenizer = RegexpTokenizer(r'\w+') 
         self.count_vect = CountVectorizer(analyzer='word')
         self.tf_transformer = TfidfTransformer(use_idf=True)
+        
         # Multinomial Naive Bayes classifier for text classification 
         self.clf = MultinomialNB()
         # Logistic Regression classifier 

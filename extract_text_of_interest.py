@@ -29,7 +29,7 @@ class WikiParser(HTMLParser):
         
     def extract_wiki_pages(self, folder):
         page_set = list()
-        pos = True if 'positive' in folder else False  # indicator of whether the current folder is positive
+        pos = True if 'positive' in folder else False # indicator of whether the current folder is positive
         for page_name in os.listdir(folder): 
             # Clean page names, ignore hidden files and txt files
             if page_name.startswith('.') or page_name.endswith('.txt'):
@@ -97,7 +97,7 @@ if __name__ == '__main__':
             parser.wikiText = []
             # Parse each page
             parser.parse_page(page)
-            # Extract text of interest of the current page
+            # Extract text of interest from the current page
             TOI = parser.extract_text_of_interest()
             TOIs.append(TOI)
         return TOIs
