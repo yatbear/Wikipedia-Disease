@@ -1,8 +1,6 @@
 # Classify Wikipedia Disease Articles
 
 
-## Goal
-
 Classify articles taken from Wikipedia as positive (relevant to diseases) or negative (irrelevant). 
 
 
@@ -38,18 +36,21 @@ A collection of Wikipedia article html dumps.
 ## Accuracy
 
 	Multinomial Naive Bayes Classifier: 98.7%
+	
 	Logistic Regression Classifier: 98.6%
 
 
 ## Usage
 
 	python extract_text_of_interest.py 
+	
 	python wiki_disease_clf.py
 
 
 ## Dependencies
 
 	NLTK toolkit
+	
 	scikit-learn library
 	 
 	
