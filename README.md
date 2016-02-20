@@ -8,18 +8,13 @@ Classify articles taken from Wikipedia as positive (relevant to diseases) or neg
 
 A collection of Wikipedia article html dumps.
  
-
-
+ 
 ## Functions
 
 - Information Extraction
 	- Extract text of interest from html dumps.	 
-	
 - Text Cleaning
 	- Remove punctuation marks and stop words (English).
-
-- Data Splitting
-	- Randomly split the data into training set and test set.
 
 - Vocabulary Construction
 	- Build vocabulary from clean training data.
